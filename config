@@ -1,0 +1,26 @@
+[blog]
+  lang = en_GB
+  posts = 10
+  style = keepitsimple.css
+  subtitle = a CMS without boundaries
+  theme = keepitsimple.html
+  title = BlazeBlogger
+[color]
+  list = true
+  log = true
+[core]
+  doctype = html
+  editor = gvim -f
+  encoding = UTF-8
+  extension = html
+[feed]
+  baseurl = http://blaze.blackened.cz/
+  fullposts = false
+  posts = 10
+[post]
+  author = top
+  date = top
+  tags = top
+[user]
+  email = jhradilek@gmail.com
+  name = Jaromír Hradílek

@@ -1,0 +1,37 @@
+
+<p>BlazeBlogger 0.8.0 RC2 has been released! Unfortunately, there was much
+more to fix than I anticipated when I published the first release candidate
+a week ago, and since the final release of 0.8.0 is going to stay for a
+while, I decided to publish the second release candidate to make sure I did
+not miss anything this time. Complete list of changes follows.</p>
+
+<!-- break -->
+
+<h3><a name="features"></a>Features</h3>
+
+<ul>
+  <li><code>blaze-make</code> now generates the index page for
+    <code>/tags</code> directory as well. This should have been implemented
+    long time ago, but somehow I forgot and managed not to even
+    notice.</li>
+  <li><code>&lt;!--&nbsp;root&nbsp;--&gt;</code> placeholder has been
+    renamed to more appropriate <code>&#0037;root&#0037;</code>, although
+    old variant will be still supported, at least to the next release (for
+    the compatibility reasons). It can also newly appear in the page/post
+    body to make it easier to link images, videos and other files.</li>
+  <li><code>blaze-make</code> no longer recognizes the <code>--force</code>
+    option and the CSS file is now always rewritten, unless told otherwise
+    via the <code>--no-css</code> option. The old solution was simply too
+    obscure and unexpected to be worth it.</li>
+</ul>
+
+<h3><a name="bugfixes"></a>Bug Fixes</h3>
+
+<ul>
+  <li>Corrected several inaccuracies in manual pages and updated them
+    according to changes above.</li>
+  <li>RSS feed now includes <code>pubDate</code> element, because some
+    readers were confused without it. Once again, this should have been
+    there right from the beginning, but somehow nobody felt the urge to
+    tell me.</li>
+</ul>

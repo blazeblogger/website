@@ -1,0 +1,36 @@
+
+<p>BlazeBlogger 1.0.0 has been finally released! The most significant
+change from the latest release is probably the addition of
+<code>core.processor</code> configuration option making it possible to use
+whatever markup language user wishes, as well as introduction of bash
+completion and quick reference card; see a complete list of changes
+below.</p>
+
+<!-- break -->
+
+<h3>Features</h3>
+
+<ul>
+  <li>Added <code>core.processor</code> configuration option, making it
+    possible to specify an external application or applications to be used
+    to process the entries. Thanks to this feature, the usage of whatever
+    markup language suites people the best is now simply matter of a single
+    configuration option.</li>
+  <li>Added <code>&#0037;tag[<em>name</em>]&#0037;</code> placeholder,
+    making it always return valid relative path to the tag with given
+    <em>name</em>.</li>
+  <li>Distinguished repository creation from its recovery.</li>
+  <li>Avoided rewriting existing stylesheet when it is exactly the same as
+    the original; patch by Matthew Woehlke.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+  <li><em>blaze-config</em> now displays proper default value even though
+    the requested option is not actually found in the configuration
+    file.</li>
+  <li>Temporary files are now removed once they are not needed any
+    more.</li>
+  <li>Added version information to manual pages.</li>
+</ul>

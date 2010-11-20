@@ -1,0 +1,5 @@
+
+<p>BlazeBlogger 0.8.1 has been released! This is only a minor release,
+introducing the <code>--full-paths</code> command-line option, newly added
+placeholder <code>&#0037;home&#0037;</code> and possibility to look items
+up by their tags.</p>

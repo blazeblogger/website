@@ -1,0 +1,48 @@
+
+<p>
+  To change the theme of a blog, first extract the content of the theme archive to the directory with the BlazeBlogger repository:
+</p>
+
+<pre>~]$ <strong>tar xfz <em>theme</em>.tar.gz</strong></pre>
+
+<p>
+  Then move the template file and the corresponding style sheet to <code>.blaze/theme/</code> and <code>.blaze/style/</code> respectively:
+</p>
+
+<pre>~]$ <strong>mv <em>theme</em>.html .blaze/theme/</strong>
+~]$ <strong>mv <em>theme</em>.css .blaze/style/</strong></pre>
+
+<p>
+  Finally, change the configuration to use this theme:
+</p>
+
+<pre>~]$ <strong>blaze-config blog.theme <em>theme</em>.html</strong>
+~]$ <strong>blaze-config blog.style <em>theme</em>.css</strong></pre>
+
+<p>
+  The changes will take effect next time you run the <code>blaze-make</code> command.
+</p>
+
+<h3>VectorLover 1.0</h3>
+
+<p>
+  <a href="%root%images/screenshots/vectorlover.png"><img src="%root%images/screenshots/vectorlover-thumb.png" alt="VectorLover" class="float-left" width="100" height="100"></a>
+  A port of a free website template by <a href="http://www.styleshout.com">styleshout.com</a>. You are free to use and/or modify it for any purpose as long as you keep the link to the author's website in the credits.
+</p>
+
+<div>
+  <strong>Download:</strong> <a href="%root%files/theme/vectorlover-1.0.1.tar.gz">vectorlover-1.0.1.tar.gz</a> (58.6 KB)<br>
+  <strong>License:</strong> <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5</a>
+</div>
+
+<h3>Keep It Simple 1.0</h3>
+
+<p>
+  <a href="%root%images/screenshots/keepitsimple.png"><img src="%root%images/screenshots/keepitsimple-thumb.png" alt="Keep It Simple" class="float-left" width="100" height="100"></a>
+  A port of a free website template by <a href="http://www.styleshout.com">styleshout.com</a>. You are free to use and/or modify it for any purpose as long as you keep the link to the author's website in the credits.
+</p>
+
+<div>
+  <strong>Download:</strong> <a href="%root%files/theme/keepitsimple-1.0.1.tar.gz">keepitsimple-1.0.1.tar.gz</a> (19.7 KB)<br>
+  <strong>License:</strong> <a href="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution 2.5</a>
+</div>

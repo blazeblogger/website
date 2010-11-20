@@ -1,0 +1,24 @@
+
+<p>BlazeBlogger 1.1.1 has been released! This release fixes four bugs that may have caused BlazeBlogger to sort entries in a wrong order, produce invalid RSS feed, or not to run properly when using an older version of Perl.</p>
+
+<!-- break -->
+
+<h3>Bug Fixes</h3>
+
+<ul>
+  <li>
+    When the <code>feed.fullposts</code> configuration option was disabled, all HTML/XHTML entities were removed. However, this may have led to an invalid output. With this update, such entities are no longer stripped out, and the RSS feed is now created as expected. (<a href="http://code.google.com/p/blazeblogger/issues/detail?id=18">Issue 18</a>, <a href="http://code.google.com/p/blazeblogger/issues/detail?id=29">29</a>)
+  </li>
+  <li>
+    Due to incorrect use of the <code>cmp</code> operator, both <code>blaze-list</code> and <code>blaze-make</code> utilities may have listed blog posts in a wrong order. With this update, the comparison subroutine has been corrected, so that all entries are now sorted in a correct order. (<a href="http://code.google.com/p/blazeblogger/issues/detail?id=26">Issue 26</a>)
+  </li>
+  <li>
+    <p>
+      When using an older version of Perl, attempting to run the <code>blaze-make</code> utility may have failed with the following error message:
+    </p>
+    <pre>blaze-make: Creating `': mkdir : No such file or directory</pre>
+    <p>
+      This error no longer occurs, and <code>blaze-make</code> now produces the expected output. (<a href="http://code.google.com/p/blazeblogger/issues/detail?id=30">Issue 30</a>)
+    </p>
+  </li>
+</ul>

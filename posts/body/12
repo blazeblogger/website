@@ -1,0 +1,71 @@
+
+<p>BlazeBlogger 1.1.0 has been released! Among few bug fixes and several
+usability improvements, this release features enhanced RSS feed creation,
+support for both HTML and XHTML standards, and improved index page.
+
+<!-- break -->
+
+<h3>New Features</h3>
+
+<p>This update features the following enhancements:</p>
+
+<ul>
+  <li>
+    Older blog posts are now easily accessible from the index page itself.
+  </li>
+  <li>
+    The configuration file now supports the <code>user.nickname</code>
+    configuration option, allowing a user to use a different name for blog
+    posts and the copyright notice.
+  </li>
+  <li>
+    <em>blaze-config</em>, <em>blaze-add</em>, and <em>blaze-edit</em> now
+    support the <code>--editor</code> command line option, allowing a user
+    to specify a custom text editor.
+  </li>
+  <li>
+    Depending on the <code>core.doctype</code> configuration option,
+    <em>blaze-make</em> now produces both valid HTML and XHTML output.
+  </li>
+  <li>
+    The <code>feed.fullposts</code> option has been added to the
+    configuration, allowing a user to enable inclusion of the whole content
+    of a blog post in the RSS feed.
+  </li>
+  <li>
+    The <code>feed.posts</code> option has been added to the configuration,
+    allowing a user to customize a number of blog posts to be listed in the
+    RSS feed.
+  </li>
+  <li>
+    The source package newly contains a command wrapper for Windows. Many
+    thanks to Sergey Kuznetsov, who has kindly provided it!
+  </li>
+  <li>
+    The localization files are now part of the official distribution.
+  </li>
+  <li>
+    The Bash completion file is now part of the official distribution.
+  </li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<p>Additionally, this update also fixes the following bugs:</p>
+
+<ul>
+  <li>
+    Previously, the RSS feed produced by BlazeBlogger did not contain the
+    “encoding” attribute. Consequent to this, the feed may have been
+    rendered incorrectly when the blog used a different code page than the
+    default UTF-8. With this release, the RSS feed has been extended, and
+    the XML header now defines the character encoding as expected.
+  </li>
+  <li>
+    Previously, blog post and page headers contained a grave accent (that
+    is, <code>`</code>), which may have caused the syntax highlighting to
+    be rendered incorrectly in certain text editors. This has been fixed,
+    and the grace accent has been replaced with an apostrophe (that is,
+    <code>'</code>).
+  </li>
+</ul>

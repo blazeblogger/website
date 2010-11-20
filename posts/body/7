@@ -1,0 +1,56 @@
+
+<p>BlazeBlogger 0.9.0 has been released! Among several usability
+improvements and a few bug fixes, this release introduces new command
+wrapper, support for coloured output, a couple of new placeholders,
+improved HTML output and significantly extended introductory tutorial; see
+a complete list of changes below.</p>
+
+<!-- break -->
+
+<h3>Features</h3>
+
+<ul>
+  <li>Added command wrapper, so that utilities can now be invoked using
+    both <code>blaze-init</code> and more usual <code>blaze
+    init</code>.</li>
+  <li>Added <code>&lt;!-- posts --&gt;</code> placeholder to make it possible to
+    list recent posts.</li>
+  <li>Added <code>&lt;!-- page-title --&gt;</code> placeholder to be used
+    inside TITLE element.</li>
+  <li>Added <code>--stats</code> command-line option to
+    <em>blaze-list</em> so that it shows repository statistics instead of
+    posts/pages.</li>
+  <li>Added basic colour support to <em>blaze-log</em> and
+    <em>blaze-list</em> utilities. If <code>color.log</code> and
+    <code>color.list</code> options are set to <code>true</code> (or
+    <code>auto</code> in case you are too used to Git), both repository log
+    and posts/pages listing should now be displayed in fancy colours. Note
+    that you can always override the current settings with
+    <code>--color</code> (or <code>--no-color</code>) command-line
+    option.</li>
+  <li>Added further verbosity level to <em>blaze-init</em> utility. It is
+    now capable of displaying list of created files when requested.</li>
+  <li>Made it possible to remove multiple records at once.</li>
+  <li>Added further CSS classes for more flexible theme creation.</li>
+  <li>Simplified theme and stylesheet creation description.</li>
+  <li>Significantly extended introductory tutorial.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+  <li>Changed generating order of <em>blaze-make</em> utility, so that even
+    corrupted pages look the way they should.</li>
+  <li>Fixed tags creation, making them properly converted to lower case as
+    they should be.</li>
+  <li>Fixed duplicate tags handling.</li>
+  <li>Fixed colon handling in header data.</li>
+  <li>Fixed RSS feed creation. There is no need to include the index file
+    name itself to the post link, especially when its extension is optional
+    and therefore every change may result in confusion of some RSS
+    readers.</li>
+  <li>Optimized <em>blaze-add</em> utility.</li>
+  <li>Unified the look of created files' paths listing of
+    <em>blaze-make</em>.</li>
+  <li>Corrected several typing errors.</li>
+</ul>

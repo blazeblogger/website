@@ -1,0 +1,48 @@
+
+<p>BlazeBlogger 0.9.1 has been released! Among several bug fixes and
+various usability improvements, the most significant change is the
+introduction of placeholders for easier cross-referencing and possibility
+to change the exact location of each of the post information; see a
+complete list of changes below.</p>
+
+<!-- break -->
+
+<h3>Features</h3>
+
+<ul>
+  <li>Added <code>&#0037;post[<em>id</em>]&#0037;</code> and
+    <code>&#0037;page[<em>id</em>]&#0037;</code> placeholders, making it
+    possible to safely refer to the post or page with given
+    <em>id</em>, no matter what URL it currently has.</li>
+  <li>Added <code>--number</code> and <code>--reverse</code> command-line
+    options to <em>blaze-list</em> and <em>blaze-log</em> utilities. This
+    is mainly to make log and posts/pages browsing more flexible and less
+    dependent on additional Unix utilities such as <code>head</code> or
+    <code>tail</code> at the same time.</li>
+  <li>Made location of post information optional. You can now set the
+    location of post author, date of publishing, and tags by changing the
+    value of <code>post.author</code>, <code>post.date</code>, and
+    <code>post.tags</code> options respectively.</li>
+  <li>Added <code>post-footer</code> class to the style sheet.</li>
+  <li>Improved RSS feed creation, so that the produced output is much
+    cleaner.</li>
+  <li>Extended documentation.</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul>
+  <li>Trailing spaces in post/page title are now properly cut and no longer
+    result in superfluous dashes in URL.</li>
+  <li>Missing or invalid header data are being repaired more thoroughly and
+    appropriate warning message, describing what is wrong and how exactly
+    was the problem solved, is displayed.</li>
+  <li>Pages with foreign diacritical marks can no longer end up with empty
+    URL. Instead, the URL is based on the page ID and user is warned.</li>
+  <li>Similarly to pages, tags with foreign diacritical marks can no longer
+    end up with empty URL as well. Instead, the MD5 hash is used instead
+    and user is, once again, warned.</li>
+  <li>Both post/page author and assigned tags can safely contain colon
+    mark.</li>
+  <li>Language file contains &lsquo;posted on&rsquo; string.</li>
+</ul>

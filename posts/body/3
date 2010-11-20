@@ -1,0 +1,63 @@
+
+<p>BlazeBlogger 0.8.0 RC1 has been released! Among various bug fixes and
+several usability improvements, this is the first release to introduce the
+new default theme; see a complete list of changes below.</p>
+
+<!-- break -->
+
+<h3><a name="features"></a>Features</h3>
+
+<ul>
+  <li>Improved behaviour of <em>blaze-add</em> and <em>blaze-edit</em>
+    utilities by making them check whether the temporary file has been
+    actually changed instead of just carelessly saving the empty or
+    unchanged page/post.</li>
+  <li>Warning messages, i.e. those sent to the <code>STDERR</code>, are no
+    longer being silenced by the <code>--quiet</code> option.</li>
+  <li>Extended documentation adding the thorough description of the style
+    sheet creation process. Also extended tutorial to include necessary
+    information about the RSS feed requirements and HTML markup (thanks to
+    <a href="http://www.vypni.net/">ronny</a> for pointing this out).</li>
+  <li>Designed a new default theme in an attempt to provide fresh and
+    modern look more suitable for the blogging purposes, yet keeping the
+    theme itself as simple as possible (no images, just a plain HTML and
+    CSS2 in the default installation).</li>
+  <li><em>blaze-init</em> no longer rewrites existing files unless told
+    otherwise via <code>--force</code> option. Similarly,
+    <em>blaze-make</em> can be now <code>--force</code>d to rewrite the
+    style sheet.</li>
+  <li>Extended command-line options of <em>blaze-add</em> utility. Title,
+    author, date, tags and URL can be now specified directly on the command
+    line, which is especially useful when adding an existing file with
+    missing header.</li>
+  <li>Extended command-line options of <em>blaze-config</em>. When
+    <code>--edit</code> option is given, well-commented and user friendly
+    configuration file is opened in the external text editor in order to
+    make the whole editing-by-hand process less obscure and a little bit
+    more comfortable experience.</li>
+  <li>Added <em>blaze-log</em> for browsing the repository logs.</li>
+  <li>Added <code>--short</code> option to <em>blaze-list</em> to enable
+    much compact listing of posts and pages. Also made it possible to look
+    records up by their title.</li>
+</ul>
+
+<h3><a name="bugfixes"></a>Bug Fixes</h3>
+
+<ul>
+  <li>Post/page lookup via date or author should now work properly.</li>
+  <li>Missing configuration file or localization no longer terminates the
+    script.</li>
+  <li>Fixed regular expression in <em>blaze-add</em> utility so that Perl
+    no longer displays warnings about obsolete feature.
+  <li>Post/page header of the added/edited file now includes information
+    about the issue with non-ASCII characters.</li>
+  <li>Fixed RSS creation bug placing the title where the subtitle should
+    have been.</li>
+  <li>Rewrote <em>blaze-list</em> so that it no longer shows records in
+    random order.</li>
+  <li><em>blaze-list</em> look-up options are now case insensitive.</li>
+  <li>Made utilities accept <code>--page</code> and <code>--post</code>
+    options in both singular and plural form to avoid possibly annoying
+    typing errors.</code>
+  <li>Corrected several typing errors.</li>
+</ul>

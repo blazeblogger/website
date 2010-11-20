@@ -1,0 +1,10 @@
+
+<p>
+  Thanks to Michael Weber, the BlazeBlogger package is now available in Gentoo Portage. To install it, switch to superuser and type the following at a shell prompt:
+</p>
+
+<pre>~]# <strong>emerge blazeblogger</strong></pre>
+
+<p>
+  Thank you, Michael!
+</p>
