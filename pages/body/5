@@ -11,25 +11,77 @@
   To change a blog localization, copy the language file below to the <code>.blaze/lang/</code> directory, and set the <code>blog.lang</code> option accordingly. Currently available localizations (with many thanks to Angel Abad, Martin Pavelek, Igor Ramos Tiburcio, Romain, and burner, who kindly provided translations to their language) are:
 </p>
 
-<ul>
-  <li><a href="%root%files/lang/cs_CZ">cs_CZ</a> (Czech)</li>
-  <li><a href="%root%files/lang/de_DE">de_DE</a> (German)</li>
-  <li><a href="%root%files/lang/en_GB">en_GB</a> (UK English)</li>
-  <li><a href="%root%files/lang/en_US">en_US</a> (US English)</li>
-  <li><a href="%root%files/lang/es_ES">es_ES</a> (Spanish)</li>
-  <li><a href="%root%files/lang/eu_ES">eu_ES</a> (Basque)</li>
-  <li><a href="%root%files/lang/fr_FR">fr_FR</a> (French)</li>
-  <li><a href="%root%files/lang/ja_JP">ja_JP</a> (Japanese)</li>
-  <li><a href="%root%files/lang/pt_BR">pt_BR</a> (Brazilian Portuguese)</li>
-  <li><a href="%root%files/lang/ru_RU">ru_RU</a> (Russian)</li>
-  <li><a href="%root%files/lang/uk_UK">uk_UK</a> (Ukrainian)</li>
-</ul>
+<table style="width: 440px;">
+  <tr>
+    <th>Language</th>
+    <th>File</th>
+  </tr>
+  <tr>
+    <td>Basque</td>
+    <td><a href="%root%files/lang/eu_ES">eu_ES</a></td>
+  </tr>
+  <tr>
+    <td>Brazilian Portuguese</td>
+    <td><a href="%root%files/lang/pt_BR">pt_BR</a></td>
+  </tr>
+  <tr>
+    <td>Czech</td>
+    <td><a href="%root%files/lang/cs_CZ">cs_CZ</a></td>
+  </tr>
+  <tr>
+    <td>English (UK)</td>
+    <td><a href="%root%files/lang/en_GB">en_GB</a></td>
+  </tr>
+  <tr>
+    <td>English (US)</td>
+    <td><a href="%root%files/lang/en_US">en_US</a></td>
+  </tr>
+  <tr>
+    <td>French</td>
+    <td><a href="%root%files/lang/fr_FR">fr_FR</a></td>
+  </tr>
+  <tr>
+    <td>German</td>
+    <td><a href="%root%files/lang/de_DE">de_DE</a></td>
+  </tr>
+  <tr>
+    <td>Japanese</td>
+    <td><a href="%root%files/lang/ja_JP">ja_JP</a></td>
+  </tr>
+  <tr>
+    <td>Russian</td>
+    <td><a href="%root%files/lang/ru_RU">ru_RU</a></td>
+  </tr>
+  <tr>
+    <td>Spanish</td>
+    <td><a href="%root%files/lang/es_ES">es_ES</a></td>
+  </tr>
+  <tr>
+    <td>Ukrainian</td>
+    <td><a href="%root%files/lang/uk_UK">uk_UK</a></td>
+  </tr>
+</table>
 
 <h3>Promotional Graphics</h3>
 
 <p>
-  Are you writing about this software, and/or would you like to promote it? You can find the logos and other related graphics in various formats and sizes <a href="%root%files/graphics/">here</a>. Just keep in mind that BlazeBlogger's logo is licensed under the <a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution-No Derivative Works 3.0 Licence</a>, which basically means that you are free to copy, distribute and transmit the work, but you may not alter, transform, or build upon it.
+  BlazeBlogger's logo is licensed under the terms of the <a href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution-No Derivative Works 3.0 Licence</a>.
 </p>
+
+<table style="width: 440px;">
+  <tr>
+    <th>Image</th>
+    <th>Format</th>
+  </tr>
+  <tr>
+    <td>Simple logo without the text</td>
+    <td><a href="%root%files/graphics/blazeblogger-logo.svg">SVG</a></td>
+  </tr>
+  <tr>
+    <td>Full logo with the text</td>
+    <td><a href="%root%files/graphics/blazeblogger-full.svg">SVG</a></td>
+  </tr>
+</table>
 
 <h3>Development</h3>
 

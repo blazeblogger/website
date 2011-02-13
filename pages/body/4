@@ -3,24 +3,24 @@
   To change the theme of a blog, first extract the content of the theme archive to the directory with the BlazeBlogger repository:
 </p>
 
-<pre>~]$ <strong>tar xfz <em>theme</em>.tar.gz</strong></pre>
+<pre>tar xfz <em>theme_name</em>.tar.gz</pre>
 
 <p>
   Then move the template file and the corresponding style sheet to <code>.blaze/theme/</code> and <code>.blaze/style/</code> respectively:
 </p>
 
-<pre>~]$ <strong>mv <em>theme</em>.html .blaze/theme/</strong>
-~]$ <strong>mv <em>theme</em>.css .blaze/style/</strong></pre>
+<pre>mv <em>theme_name</em>.html .blaze/theme/
+mv <em>theme_name</em>.css .blaze/style/</pre>
 
 <p>
   Finally, change the configuration to use this theme:
 </p>
 
-<pre>~]$ <strong>blaze-config blog.theme <em>theme</em>.html</strong>
-~]$ <strong>blaze-config blog.style <em>theme</em>.css</strong></pre>
+<pre>blaze-config blog.theme <em>theme_name</em>.html
+blaze-config blog.style <em>theme_name</em>.css</pre>
 
 <p>
-  The changes will take effect next time you run the <code>blaze-make</code> command.
+  The changes take effect the next time you run the <code>blaze-make</code> command.
 </p>
 
 <h3>VectorLover 1.0</h3>
