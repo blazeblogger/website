@@ -538,13 +538,13 @@ input.button {
 }
 
 /* Post metadata: */
-.information {
+.post-header {
   font-size: .95em;
   padding-top: 3px;
   padding-left: 15px;
   color: #B0B0B0;
 }
-.information a, .information a:visited {
+.post-header a, .post-header a:visited {
   color: #000;
   border: none;
 }
