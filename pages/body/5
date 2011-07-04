@@ -23,7 +23,7 @@
 <h3>Language Files</h3>
 
 <p>
-  To change a blog localization, copy the language file below to the <code>.blaze/lang/</code> directory, and set the <code>blog.lang</code> option accordingly. Currently available localizations (with many thanks to Angel Abad, Martin Pavelek, Igor Ramos Tiburcio, Romain, and burner, who kindly provided translations to their language) are:
+  To change a blog localization, copy the language file below to the <code>.blaze/lang/</code> directory, and set the <code>blog.lang</code> option accordingly. Currently available localizations (with many thanks to Angel Abad, Martin Pavelek, Igor Ramos Tiburcio, Ton Kersten, Romain, and burner, who kindly provided translations to their language) are:
 </p>
 
 <table style="width: 440px;">
@@ -42,6 +42,10 @@
   <tr>
     <td>Czech</td>
     <td><a href="%root%files/lang/cs_CZ">cs_CZ</a></td>
+  </tr>
+  <tr>
+    <td>Dutch (Nederlands)</td>
+    <td><a href="%root%files/lang/nl_NL">nl_NL</a></td>
   </tr>
   <tr>
     <td>English (UK)</td>
